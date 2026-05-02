@@ -1,0 +1,1369 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, address, cite, img, strike, strong, ol, ul, li, fieldset, form, label, legend, article, aside, footer, header, menu, nav, ruby, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	background-image: url("/images/bg.png");
+	background-repeat: repeat-y;
+	background-position: center;
+}
+
+/************************************************************
+*               Global Styles                             
+************************************************************/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+img, embed, object, video{
+  max-width: 100%;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: .1s;
+	-moz-transition: .1s;
+	-o-transition: .1s;
+}
+
+a:visited {
+	color: #4139b2;
+	text-decoration: underline;
+}
+
+a.printLink {
+	color: #252161;
+	font-weight: 100;
+	font-family: Arial, sans-serif;
+	font-size: .75em;
+	text-transform: uppercase;
+	width: 140px;
+	display: inline-block;
+}
+
+a.printLink.lesson-handout {
+	font-size: 1em;
+	margin-left: 1.5em;
+	width: 100%;
+}
+
+a.printLink.lesson-handout.top {
+	margin-top: 1.3em;
+}
+
+a.printLink.lesson-handout.bottom {
+	margin-bottom: 1.3em;
+}
+
+a.printLink img {
+	padding-right: 5px;
+}
+
+a.imageCredit {
+	font-family: Helvetica, sans-serif;
+	font-size: .75em;
+	color: #A97B50 !important;
+	text-align: right;
+}
+
+span.dropcap {
+	font-size: 55px;
+	color: #FBB51A;
+	float: left;
+	line-height: 52px;
+	margin-bottom: -11px;
+	margin-right: 8px;
+	text-shadow: 1px 1px 2px #252161;
+}
+
+.quote-marker {
+	background-color: yellow;
+}
+
+.qm {
+	background-color: yellow;
+}
+
+.quote-highlighter {
+	background-color: #fdfec8;
+}
+
+.qh {
+	background-color: #fdfec8;
+}
+
+.text-highlighter {
+	color: #ff0000;
+}
+
+.th {
+	color: #ff0000;
+}
+
+.arial {
+	font-family: Arial, sans-serif;
+}
+
+.tall-image {
+	padding-left: 4.5em;
+}
+
+/* Global Class for Underlining */
+.u {
+	text-decoration: underline;
+}
+
+u {
+	text-decoration: underline;
+}
+
+/* Global Class for Bold */
+strong {
+	font-weight: bold;
+}
+
+.gsc-control-cse {
+	padding: 0 !important;
+	padding-top: 5px !important;
+	width: 100% !important;
+}
+
+table.gsc-search-box {
+	width: 244px !important;
+}
+
+/************************************************************
+*               Google Web Fonts                             
+************************************************************/
+.ph {
+	font-family: 'Patrick Hand', cursive;
+}
+.bs {
+	font-family: 'Bad Script', cursive;
+}
+
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: underline;
+}
+
+
+div.aboutMe a, 
+div.aboutPtbm a, 
+div#home-page section.article p a, 
+div#sub-main div.article p a {
+	color: #252161;
+	border: 1px solid #FBB51A;
+	background-color: #FEF4DD;
+	float: right;
+	text-decoration: none;
+	display: block;
+	padding: .3em .7em;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	clear: both;
+}
+div.aboutMe a:hover, 
+div.aboutPtbm a:hover, 
+div#home-page section.article p a:hover, 
+div#sub-main div.article p a:hover {
+	text-decoration: none;
+	background-color: #fdd373;
+}
+
+div#sub-main div.article p a {
+	line-height: 1em;
+	margin-bottom: 1.5em;
+}
+
+div#sub-main div.article p a:visited {
+	color: #252161;
+}
+
+div.facebookBtn {}
+div.twitterBtn {
+	float: left;
+	width: 90px;
+	margin-top: 2px;
+}
+div.fb-comments {
+	clear: both;
+	display: block;
+	margin-top: 1em;
+}
+
+/* Begin Header */
+header {
+	margin-top: .5em;
+}
+
+header h1.logo {
+	width: 32.7083333%; /* 314px / 960px */
+	float: left;
+}
+
+header div.search {
+	float: right;
+	width: 335px;
+}
+
+header div.search img.social {
+	float: left;
+	padding-right: .5em;
+}
+
+header div.search img.header.right {
+	padding-right: 1.29198966%; /* 15px/387px */
+}
+
+/* Begin Menu */
+div.navigation.top {
+	text-align: center;
+}
+
+div.navigation.top ul {
+	border-top: 2px solid #fbb51a;
+	border-bottom: 2px solid #fbb51a;
+	padding-bottom: .5em;
+	padding-top: 1em;
+	background-color: #fef4dd;
+	width: 100%;
+	clear: both;
+}
+
+div.navigation.top ul li {
+	list-style-type: none;
+	display: inline-block;
+	width: 206px;
+	height: 1.5em;
+}
+
+div.navigation.top ul li a {
+	font-family: Arial;
+	font-weight: 400;
+	color: #252161;
+	font-size: .875em;
+}
+
+div.navigation.top ul li a:hover, a.browseMore:hover {
+	background-color: #fdd373;
+	text-decoration: none;
+	padding: .2em 1em;
+	border-left: 2px solid #fbb51a;
+	border-right: 2px solid #fbb51a;
+}
+
+/* Begin Footer */
+div.footer {
+	clear: both;
+}
+
+div.footer p, div#home-page div.footer p {
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	padding-top: .75em;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
+div.footer div.copyrightFooter {
+	clear: both;
+	text-align: center;
+	font-size: .75em;
+	color: #252161;
+	padding-bottom: .75em;
+	border-top: 1px solid #fbb51a;
+}
+
+div.footer.content div.moreInfo h5 {
+	text-align: center;
+	padding-top: 1.5em;
+	font-family: Arial;
+	color: #252161;
+	font-weight: bold;
+	font-size: 1.125em;
+	margin-bottom: 1em;
+}
+
+div.footer.content div.moreInfo a {
+	display: block;
+	margin: 1em;
+	font-family: Arial;
+	color: #252161;
+	font-size: .875em;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	padding-left: 5em;
+	border-left: 2px solid #FEF4DD;
+	border-right: 2px solid #FEF4DD;
+	margin: .5em 2em;
+}
+
+div.footer.content div.moreInfo a:hover {
+	background-color: #fdd373;
+	border-left: 2px solid #fbb51a;
+	border-right: 2px solid #fbb51a;
+	text-decoration: none;
+}
+
+div.footer.content div.moreInfo a.aboutWebsite {
+	background-image: url(/images/aboutwebsiteBtn.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+div.footer.content div.moreInfo a.sendEmail {
+	background-image: url(/images/sendemailBtn.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+div.footer.content div.moreInfo a.subscribe {
+	background-image: url(/images/rssBtn.png);
+	background-repeat: no-repeat;
+	background-position: left center;	
+}
+
+div.footer.content div.moreInfo a.topicalArchive {
+	background-image: url(/images/archiveBtn.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+div.footer.content div.moreInfo a.buyBook {
+	background-image: url(/images/buybookBtn.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin-bottom: 1.5em;
+}
+
+div.footer.content {
+	border-top: 1px solid #fbb51a;
+	padding-top: 2em;
+}
+
+div.footer div.aboutMe {
+	margin-bottom: 2em;
+}
+/* Anything ABOVE this line is for every page on the site */
+/**********************************************************/
+
+
+
+
+/**********************************************************/
+/* Anything BELOW this line contains page specific styles */
+/**********************************************************/
+
+
+/****** CONTENT-PAGE and HOME-PAGE specific styles ********/
+#content-page, #home-page {
+	width: 90%; /* 1035px */
+	margin: 0 auto;
+	background-color: white;
+	padding: 20px 40px;
+	box-shadow: 0px 0px 7px #999;
+	-moz-box-shadow: 0px 0px 7px #999;
+	-webkit-box-shadow: 0px 0px 7px #999;
+	line-height: 1;
+}
+
+
+/* Begin HOME-PAGE specific styles */
+
+div#home-page h1, div#home-page h2 {
+	margin-bottom: .5em;
+}
+
+div#home-page section {
+	padding-bottom: 2em;
+}
+
+div#home-page section.article.top, div#sub-main section.article.top {
+	margin-top: 2em;
+	padding-top: 0;
+	border-top: none;
+}
+
+div#home-page section.article.left, div#home-page section.article.middle, div#home-page section.article.right, div#home-page section.article.extra {
+	width: 30.902777777%;
+	float: left;
+	padding-top: 2em;
+}
+
+div#home-page section.article.left, div#home-page section.article.middle {
+	margin-right: 3.541666666%;
+}
+
+div#home-page section.article.top div.topImage, div#sub-main section.article.top div.topImage {
+	float: left;
+	width: 30.902777777%;
+	margin-right: 3.541666666%;
+}
+
+div#home-page section.article.top div.topImage blockquote, 
+div#content-page div.topImage blockquote, 
+div#content-page div.innerContent blockquote,
+div#content-page div.topQuote blockquote {
+	background-color: #EDECF2;
+	padding: 1em;
+	font-size: 1.1em;
+	line-height: 1.4em;
+	font-family: Arial;
+	background-image: url("/images/blockquote-mark.png");
+	background-repeat: no-repeat;
+	background-position: 3% 12%;
+	padding-left: 3.5em;
+	color: #252161;
+}
+
+
+div#home-page section.article.top div.topContent, div#sub-main section.article.top div.topContent {
+	float: right;
+	width: 65.555555557%;
+	margin-bottom: 2em;
+}
+
+div#home-page div.clear, div#sub-main div.clear {
+	clear: both;
+	border-top: 1px solid #fbb51a;
+}
+
+div#sub-main div.clear.bottom {
+	border-top: none;
+}
+
+div#home-page section.article p a {
+	float: none;
+	display: inline-block;
+	line-height: 1em;
+	margin-top: 1em;
+}
+
+div#home-page h1 {
+	font-weight: 200;
+	font-size: 1.7em;
+	font-family: Arial;
+	color: #252161;	
+}
+
+div#home-page h2 {
+	font-weight: 200;
+	font-size: 1.3em;
+	line-height: 1.2em;
+	font-family: Arial;
+	color: #252161;		
+}
+
+div#home-page h3 {
+	font-size: 1em;
+	color: #A97B50;
+	font-family: Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+div#home-page p, div#sub-main p {
+	font-family: Georgia;
+	font-size: 1em; /* 12px / 16px */
+	color: #000000;
+	line-height: 1.7em;
+}
+
+div.browseButton {
+	clear: both;
+	border-top: 2px solid #fbb51a;
+	border-bottom: 1px solid #fbb51a;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	background-color: #fef4dd;
+}
+
+a.browseMore {
+	font-family: Arial;
+	color: #252161;
+	font-size: 1.3em;
+	padding: .2em 1em;
+	border-left: 2px solid #fef4dd;
+	border-right: 2px solid #fef4dd;
+	margin-left: 1em;
+}
+
+/* Begin Content-Page */
+#content-page h1, h2, h3 {
+	margin-bottom: 1em;
+}
+
+#content-page h1 {
+	font-weight: 200;
+	font-size: 1.7em;
+	font-family: Arial;
+	color: #252161;
+}
+
+#content-page h2 {
+	color: #a97b50;
+	font-family: Helvetica;
+	line-height: 1.5em;
+}
+
+#content-page h3, div#sub-main h3 {
+	font-weight: 100;
+	font-size: 1.1em;
+	color: #252161;
+	font-family: Arial;
+	margin-bottom: .3em;
+	margin-top: 1.7em;
+}
+
+#content-page blockquote {
+	margin-left: 2em;
+}
+
+/* Remove margin-left if there is a quote at the top of an article instead of an image */
+#content-page .topQuote blockquote {
+	margin-left: 0;
+}
+
+
+
+/* Begin Content-Page Article */
+div#content-page div.article {
+	width: 61.352657%; /* 635px / 1035px main column */
+	float: left;
+	margin-top: 2em;
+}
+
+div#content-page div.article a {
+	color: blue;
+}
+
+div#content-page div.article a:visited {
+	color: #A97B50;
+}
+
+div#content-page div.article p {
+	font-family: Georgia;
+	font-size: 1em; /* 12px / 16px */
+	color: #000000;
+	margin-bottom: 1em;
+	line-height: 1.7em;
+}
+
+/* Begin Content-Page Right Column */
+div#content-page div.column.right {
+	width: 29.9516908%; /* 310px / 1035px second column */
+	float: right;	
+	margin-top: 3em;
+	/* box-shadow: 0px 0px 15px #acacac; maybe not use a box shadow for this? going to try a border */
+	background-color: #edecf2;
+}
+
+.last {
+	clear: both;
+	margin-bottom: 2em;
+}
+
+div#content-page div.column.right h4 {
+	background-color: #252161;
+	color: white;
+	font-family: Arial, sans-serif;
+	font-size: 1.25em;
+	padding: .5em .75em;
+	text-align: center;	
+}
+
+div#content-page div.column.right div a {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: #505050;
+	padding: .7em 1em;
+	display: block;
+	line-height: 1.3em;
+	border-left: 2px solid #edecf2;
+	border-right: 2px solid #edecf2;
+}
+
+div#content-page div.column.right div a:hover {
+	background-color: #fff;
+	text-decoration: none;
+	border-left: 2px solid #252161;
+	border-right: 2px solid #252161;
+}
+
+div#content-page div.column.right div.lastArticle {
+	border-bottom: none;
+}
+
+/* Begin #Content-Page .Lesson-Handout Styles */
+div#content-page div#lesson-handout {
+	margin: 1em 0;
+	padding: 70px 50px 70px 50px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	height: 100%;
+	min-height: 1100px;
+	font-family: "Times New Roman", Times, serif;
+	line-height: 1.3em;
+	font-size: 1.125em;
+}
+
+div#content-page div#lesson-handout h3 {
+	margin: 0;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	color: #000;
+	font-size: 1em;
+}
+
+div#content-page div#lesson-handout .questions {
+	font-family: Arial, sans-serif;
+}
+div#content-page div#lesson-handout .arial {
+	font-family: Arial, sans-serif;
+}
+
+div#content-page div#lesson-handout a {
+	text-decoration: underline;
+}
+div#content-page div#lesson-handout a:visited {
+	color: #810082;
+}
+
+
+div#content-page div#lesson-handout #intro {
+	margin-bottom: 1.5em;
+}
+
+div#content-page div#lesson-handout #intro p span {
+	margin-left: 4em;
+}
+
+div#content-page div#lesson-handout #purpose h3 {
+	float: left;
+}
+
+div#content-page div#lesson-handout #purpose #purpose-content {
+	margin-left: 4em;
+}
+
+div#content-page div#lesson-handout #purpose #purpose-content p {
+	margin-bottom: 1em;
+}
+
+div#content-page div#lesson-handout .section {
+	margin-bottom: 1em;
+}
+
+div#content-page div#lesson-handout .section.quote {
+	margin-top: 1em;
+}
+
+/* Lesson Handout with a TABLE */
+div#content-page div#lesson-handout #table {
+	margin-bottom: 2em;
+}
+
+div#content-page div#lesson-handout #table table {
+	border: 2px solid #000;
+	border-collapse: collapse;
+}
+
+div#content-page div#lesson-handout #table table th,
+div#content-page div#lesson-handout #table table td {
+	border: 2px solid #000;
+	padding: .5em;
+}
+
+
+/* Begin #Content-Page .Lesson-Handout 2 Column Styles */
+div#content-page div#lesson-handout div#lesson-handout-2col {
+	        column-count: 2;
+	   -moz-column-count: 2;
+	-webkit-column-count: 2;
+	        column-gap: 30px;
+	   -moz-column-gap: 30px;
+	-webkit-column-gap: 30px;	
+}
+
+div#content-page div#lesson-handout div#lesson-handout-2col section {
+	margin-bottom: 1em;
+}
+
+div#content-page div#lesson-handout div#lesson-handout-2col strong {
+	font-weight: bold;
+}
+
+/* hide feedburner image */
+div#creditfooter {
+	display: none;
+}
+
+div#stephenmbirds35is98k80oc976j5tjk55l254, div#content-page div.column.right ul.subMenu {
+	padding: 10px;
+	border-bottom: 2px solid #252161;	
+}
+
+div#stephenmbirds35is98k80oc976j5tjk55l254 ul {
+	width: 100%;
+}
+
+div.footer div.footer.content div.aboutMe h4, div.footer div.footer.content div.aboutPtbm h4 {
+	clear: both;
+	font-family: Helvetica, sans-serif;
+	color: #a97b50;
+	padding-top: 1em;
+}
+
+/******************************************/
+/*        Begin Sub-Main Pages */
+/******************************************/
+
+div#sub-main section.article.top div.topImage {
+	margin-bottom: 2em;
+}
+
+div#sub-main article {
+	margin-top: 1em;
+}
+
+div#sub-main article p a.inlineLink {
+	color: blue !important;
+	border: none;
+	background-color: white;
+	float: none;
+	display: inline;
+	font-family: Georgia, serif;
+	font-weight: normal;
+	padding: 0;
+}
+
+div#sub-main article p a.inlineLink:hover {
+	background-color: white;
+	text-decoration: underline;
+}
+
+div#sub-main article p a.inlineLink:visited {
+	color: #A97B50 !important;
+}
+
+div#sub-main table {
+	float: left;
+	margin-bottom: 2em;
+	width: 61.352657%;
+	border-collapse: collapse;
+	border-bottom: 2px solid #fbb51a;
+}
+
+div#sub-main table thead, div#archivesContent table thead {
+	text-align: left;
+}
+
+div#sub-main table th, div#archivesContent table th {
+	background: #fdd373;
+	color: #252161;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	font-size: 1.25em;
+	padding: .5em;
+}
+
+div#sub-main table td, div#archivesContent table td {
+	background: #FEF4DD;
+	padding: .7em .5em;
+	border-top: 1px solid #fbb51a;
+	border-bottom: 1px solid #fbb51a;
+	color: #505050;
+	font-family: Arial, sans-serif;
+	font-size: .875em;
+	line-height: 2em;
+}
+
+div#sub-main h1.tableHeader {
+	margin-top: 1em;
+}
+
+/* Begin Sub Sub Main topHeader Style */
+#sub-main .article .topHeader h1 {
+	font-size: 55px;
+	color: #FBB51A;
+	line-height: 52px;
+	text-shadow: 1px 1px 2px #252161;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+/* Begin Archives Page Styles */
+div#archivesContent {	
+	width: 61.352657%; /* 635px / 1035px main column */
+	float: left;
+}
+
+div#archivesContent table {
+	width: 100%;
+	margin-bottom: 2em;
+	border-collapse: collapse;
+	border-bottom: 2px solid #fbb51a;
+}
+
+div#archivesContent table.firstTable {
+	margin-top: 3em;
+}
+
+div#content-page div.column.right div.innerContent {
+	background-color: white;
+}
+
+div#content-page div.innerContent blockquote {
+	margin-left: 0;
+	background-color: #FEF4DD;
+	border: 2px solid #fbb51a;
+}
+
+div#content-page div.innerContent aside {
+	background-color: #FEF4DD;
+	border: 2px solid #fbb51a;
+	padding: 1em;
+	font-size: 1.1em;
+	line-height: 1.4em;
+	font-family: Arial;
+	color: #252161;
+}
+
+/**************************************************/
+/*             Begin Media Queries                */
+/**************************************************/
+
+/* DESKTOP Size */
+@media screen and (min-width: 1025px) { 
+	
+		#content-page, #home-page {
+			max-width: 960px;
+		}
+		
+		div.footer div.footer.content div.aboutMe {
+			float: left;
+			width: 30.902777777%; /* 310px/960px */
+			margin-right: 3.541666666%; /* 34px/960px this is for gutter on the right side of column */
+		}
+				
+		div.footer div.footer.content div.aboutPtbm {
+			float: left;
+			width: 30.902777777%; /* 310px/960px */
+			margin-right: 3.541666666%; /* 34px/960px this is for gutter on the right side of column */
+		}
+
+		div.footer div.footer.content div.moreInfo {
+			float: left;
+			width: 30.902777777%; /* 310px/960px */
+			background-color: #FEF4DD;
+			border-top: 2px solid #FBB51A;
+			border-bottom: 2px solid #FBB51A;
+			margin-top: 3em;
+		}
+				
+		div.navigation.bottom {
+			display: none;
+		}
+		
+		div.navigation.jump {
+			display: none;
+		}
+		
+		section.article.extra {
+			display: none;
+		}
+		
+		/* Begin Archives Table Styles */
+		div#archivesContent table .articleLinks {
+			width: 361px;
+		}
+}
+
+/* IN-BETWEEN Desktop and Tablet Size */
+@media screen and (max-width: 1025px) { 
+
+		body {
+			background-image: none;
+		}
+
+		#content-page, #home-page {
+			box-shadow: 0px 0px 0px #fff;
+		}
+
+		div.navigation.top ul {
+			background-color: #fef4dd;
+			border-bottom: 2px solid #fbb51a;
+			border-top: 2px solid #fbb51a;
+			padding-top: 1.5em;
+		}
+
+		div.navigation.top ul li {
+			width: 36%; /* 200px / 768px */
+			height: 2em;
+			font-size: 1.2em;
+		}
+				
+		div.footer.content {
+		}
+
+		div.footer div.footer.content div.aboutPtbm {
+			float: left;
+			width: 47.5%;
+			margin-bottom: 1.5em;			
+		}
+		
+		div.footer div.footer.content div.aboutMe {
+			float: right;
+			width: 47.5%;
+			margin-bottom: 1.5em;			
+		}
+		
+		div.footer div.footer.content div.moreInfo {
+			clear: both;
+			border-top: 2px solid #FBB51A;
+			border-bottom: 1px solid #fbb51a;
+			background-color: #fef4dd;			
+		}
+
+		div.footer div.footer.content div.aboutPtbm img {
+			width: 130px;
+			margin: 0 auto;
+			display: block;
+		}
+		
+		div.footer div.footer.content div.aboutMe img {
+			width: 158px;
+			margin: 0 auto;
+			display: block;
+		}
+		
+		div.footer div.footer.content div.aboutMe h4, div.footer div.footer.content div.aboutPtbm h4 {
+			text-align: center;
+		}	
+
+		div.footer.content div.moreInfo h5 {
+			margin-bottom: 0;
+			padding-top: 1em;
+		}
+		
+		div.footer.content div.moreInfo ul li {
+			width: 49%;
+			display: inline-block;
+		}
+		
+		div.footer.content div.moreInfo ul li a {
+		}
+				
+		div.navigation.jump {
+			display: none;
+		}
+		
+		div.navigation.bottom {
+			display: none;
+		}
+		
+		section.article.extra {
+			display: none;
+		}
+
+		div#sub-main div.column.right, 
+		div#content-page div.column.right {
+			float: none;
+			width: 100%;
+			clear: both;
+			display: block;
+			margin-bottom: 2em;
+			margin-top: 1em;
+		}
+
+		/* ARCHIVES PAGE-Styles */
+		div#archivesContent {	
+			width: 100%;
+			float: none;
+		}
+		
+		/* ARCHIVES TABLE-Styles */
+		div#archivesContent table .articleLinks {
+			width: 500px;
+		}
+
+		div#content-page div.column.right div.innerContent {
+			display: none;
+		}
+}
+
+/********************************************/
+/*             Tablet Size                  */
+/********************************************/
+
+@media screen and (max-width: 768px) { 
+	
+		body {
+			background-image: none;
+		}
+	
+	
+		#content-page, #home-page {
+			min-width: 90%;
+			margin: 0 auto;
+			box-shadow: 0px 0px 0px #fff;
+		}
+		
+		div.navigation.top ul li {
+			width: 36%; /* 200px / 768px */
+		}
+
+				
+		div#content-page div.article {
+			width: 100%;
+			float: none;
+		}
+		
+		div#content-page div.column.right {
+			display: none;
+		}
+		
+		section.article.extra {
+			display: block;
+		}
+		
+		div#home-page section.article.left, 
+		div#home-page section.article.right, 
+		div#home-page section.article.middle, 
+		div#home-page section.article.extra {
+			float: none;
+			width: 100%;
+		}
+		
+		div#home-page section.article.left, 
+		div#home-page section.article.right, 
+		div#home-page section.article.middle {
+			border-bottom: 1px solid #fbb51a;
+		}
+						
+		div.footer div.footer.content div.aboutPtbm {
+			float: left;
+			width: 47.5%;
+			margin-bottom: 1.5em;
+		}
+
+		div.footer div.footer.content div.aboutPtbm img {
+			width: 130px;
+			margin: 0 auto;
+			display: block;
+		}
+		
+		div.footer div.footer.content div.aboutMe img {
+			width: 158px;
+			margin: 0 auto;
+			display: block;
+		}
+		
+		div.footer div.footer.content div.aboutMe h4, 
+		div.footer div.footer.content div.aboutPtbm h4 {
+			text-align: center;
+		}			
+				
+		div.footer div.footer.content div.aboutMe {
+			float: right;
+			width: 47.5%;
+			margin-bottom: 1.5em;
+		}
+
+		div.footer div.footer.content div.moreInfo {
+			clear: both;
+			border-top: 2px solid #FBB51A;
+		}
+		
+		div.footer.content div.moreInfo h5 {
+			margin-bottom: 0;
+			padding-top: 1em;
+		}
+
+		div.footer div.footer.content div.moreInfo ul li {
+			width: 49%;
+			display: inline-block;
+		}
+		
+		div.footer.content div.moreInfo ul li a {
+		}
+
+				
+		div.navigation.jump {
+			display: none;
+		}
+		
+		div.navigation.bottom {
+			display: none;
+		}
+		
+		div.browseButton {
+			border-top: 2px solid #fbb51a;
+			border-bottom: 1px solid #fbb51a;
+		}
+		
+		div#sub-main table {
+			width: 100%;
+		}
+
+		div#sub-main div.column.right, div#content-page div.column.right {
+			float: none;
+			width: 100%;
+			clear: both;
+			display: block;
+			margin-bottom: 2em;
+			margin-top: 1em;
+		}
+		
+		div#sub-main ul {
+			float: none;
+		}
+
+		/* ARCHIVES PAGE-Styles */
+		div#archivesContent {	
+			width: 100%;
+			float: none;
+		}
+		
+		/* Begin Archives Table Styles */
+		div#archivesContent table .articleLinks {
+			width: 370px;
+		}
+
+		div#content-page div.column.right div.innerContent {
+			display: none;
+		}
+}
+
+/**************************************/
+/*           PHONE Size               */
+/**************************************/
+
+@media screen and (max-width: 640px) { 
+		
+		body {
+			background-image: none;
+		}		
+		
+		#content-page, #home-page {
+			padding: 0;
+			box-shadow: none;
+			-moz-box-shadow: none;
+			-webkit-box-shadow: none;
+		}
+		
+		header h1.logo {
+			width: 100%; 
+			float: left;
+		}
+		
+		header {
+			margin-top: 1.5em;
+		}
+		
+		header div.search {
+			width: 200px;
+			margin: 0 auto;
+			margin-bottom: 1em;
+			float: none;	
+		}
+		
+		header div.search img.social {
+			display: none;
+		}
+		
+		div.navigation.top {
+			display: none;
+		}
+		
+		div.navigation.jump {
+			display: block;
+			margin: 0;
+			padding: 0;
+			border-top: 2px solid #fbb51a;
+			border-bottom: 2px solid #fbb51a;
+			clear: both;
+			text-align: center;
+		}
+		
+		div.navigation.jump ul li {
+			padding: .5em 0;
+			background-color: #fef4dd;
+		}
+
+
+		div.navigation.jump ul li a {
+			font-family: Arial;
+			font-weight: 400;
+			color: #252161;
+		}
+		
+		div#home-page section.article.top {
+			margin-top: 1em;
+		}
+		
+		div#home-page section.article.top div.topImage, 
+		div#sub-main section.article.top div.topImage {
+			width: 100%;
+			margin-bottom: 1em;
+			float: none;
+		}
+		
+		div#home-page section.article.top div.topImage img {
+			width: 99%;
+			height: auto;
+		}
+		
+		div#home-page section.article.top div.topContent, 
+		div#sub-main section.article.top div.topContent {
+			width: 100%;
+		}
+		
+		div#home-page section.article.left, 
+		div#home-page section.article.middle, 
+		div#home-page section.article.right {
+			width: 100%;
+			float: none;
+		}
+		
+		div#home-page section.article.left, 
+		div#home-page section.article.middle, 
+		div#home-page section.article.right {
+			border-bottom: 1px solid #fbb51a;
+		}
+		
+		div#content-page div.article {
+			margin-top: 1em;
+		}
+		
+		div#content-page div.column.right {
+			display: none;
+		}
+		
+		div.footer p {
+			font-size: .875em;
+			padding: .75em 0;
+		}
+
+		div.navigation.bottom {
+			display: block;
+		}
+		
+		div.navigation.bottom ul {
+			width: 100%;
+			border-top: 2px solid #fbb51a;
+			border-bottom: 1px solid #fbb51a;
+
+		}
+		
+		div.navigation.bottom ul li {
+			list-style-type: none;
+			padding: .5em 0;
+			background-color: #fef4dd;
+			text-align: center;
+
+		}
+		
+		div.navigation.bottom ul li a {
+			font-family: Arial;
+			font-weight: 400;
+			color: #252161;
+			font-size: 1.75em;
+		}
+		
+		div.footer p {
+			padding-bottom: 0;
+		}
+		a.printLink {
+			padding-top: 1em;
+		}
+
+		div.footer.content {
+			display: none;
+		}
+		
+		div.browseButton {
+			margin-bottom: 1.5em;
+			border-bottom: 2px solid #fbb51a;
+			border-top: 2px solid #fbb51a;
+		}
+		div#sub-main div.column.right, 
+		div#content-page div.column.right {
+			float: none;
+			width: 100%;
+			clear: both;
+			display: block;
+			margin-bottom: 2em;
+			margin-top: 1em;
+		}
+		
+		div#sub-main ul {
+			float: none;
+		}
+		/* Begin Archives Page Styles */
+		div#archivesContent {	
+			width: 100%;
+			float: none;
+		}
+		
+		/* Begin Archives Table Styles */
+		div#archivesContent table .author {
+			display: none;			
+		}
+		
+		div#archivesContent table .articleLinks {
+			width: 100%;
+		}
+
+		div#content-page div.column.right div.innerContent {
+			display: none;
+		}
+		/* Begin Lesson Handout Styles */
+		div#content-page div#lesson-handout {
+			padding: .5em;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+			height: 100%;
+			min-height: 1242px;
+			font-family: "Times New Roman", Times, serif;
+			line-height: 1.2em;
+			font-size: 1.25em;
+		}
+		div#content-page div#lesson-handout #intro p span {
+			margin-left: 0;
+		}
+		div#content-page div#lesson-handout #purpose h3 {
+			float: none;
+		}
+		div#content-page div#lesson-handout #purpose #purpose-content {
+			margin-left: 0;
+		}
+		
+		/* Begin #Content-Page .Lesson-Handout 2 Column Styles */
+		div#content-page div#lesson-handout div#lesson-handout-2col {
+			        column-count: 1;
+			   -moz-column-count: 1;
+			-webkit-column-count: 1;	
+		}
+		
+		/* Lesson Handout with a TABLE */
+		div#content-page div#lesson-handout #table table {
+			font-size: .75em;
+			width: 100%;
+		}
+		
+		div#content-page div#lesson-handout #table table th,
+		div#content-page div#lesson-handout #table table td {
+			border: 2px solid #000;
+			padding: .5em;
+		}		
+		
+}

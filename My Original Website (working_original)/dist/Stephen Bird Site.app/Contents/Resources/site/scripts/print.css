@@ -1,0 +1,25 @@
+body {
+	margin:0;
+	padding:0;
+	margin-left: 50px;
+	margin-right: 50px; 
+	line-height: 1.4em; 
+	word-spacing:1px; 
+	letter-spacing:0.2px; 
+	font: 13px Georgia, Times,"Times New Roman", serif; 
+	color: #000;
+}
+	
+header, div.navigation.top, div.navigation.jump, div.twitterBtn, div.facebookBtn, div.fb-comments, div.column.right, div.footer, div.footer.content, html#facebook, .printLink, div.topImage blockquote, img, div.browseButton, a.imageCredit {
+	display:none;
+}
+	
+a:link, a:visited {
+	color: #520;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+	
